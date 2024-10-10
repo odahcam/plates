@@ -89,8 +89,8 @@ class Func
 
     /**
      * Call the function.
-     * @param  Template $template
-     * @param  array    $arguments
+     * @param Template|null $template
+     * @param array         $arguments
      * @return mixed
      */
     public function call(?Template $template = null, $arguments = array())
