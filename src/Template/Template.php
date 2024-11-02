@@ -109,10 +109,10 @@ class Template
 
     /**
      * Assign or get template data.
-     * @param  array $data
-     * @return mixed
+     * @param array|null $data
+     * @return array|void
      */
-    public function data(array $data = null)
+    public function data(?array $data = null)
     {
         if (is_null($data)) {
             return $this->data;
