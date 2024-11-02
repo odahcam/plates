@@ -29,4 +29,4 @@ jobs:
       - name: Install Composer Deps
         run: composer install
       - name: Run Tests
-        run: phpunit --testdox --coverage-text --coverage-clover=coverage.clover
+        run: composer test
