@@ -95,9 +95,11 @@ class Func
      */
     public function call(?Template $template = null, $arguments = array())
     {
-        if (is_array($this->callback) and
-            isset($this->callback[0]) and
-            $this->callback[0] instanceof ExtensionInterface
+        if (
+            is_array($this->callback) &&
+            isset($this->callback[0]) &&
+            $this->callback[0] instanceof ExtensionInterface &&
+            property_exists($this->callback[0], 'template')
         ) {
             $this->callback[0]->template = $template;
         }
