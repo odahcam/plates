@@ -1,10 +1,14 @@
 build
-composer.lock
-vendor
-doc/public
-doc/data/versions.json
+/vendor
+/doc/public
+/doc/data/versions.json
+/doc/.hugo_build.lock
 .generated
 .phpunit.result.cache
+.phpunit.cache
+composer.phar
+
+# JetBrains IDEA files
 .idea/.gitignore
 .idea/modules.xml
 .idea/php-test-framework.xml
@@ -12,4 +16,3 @@ doc/data/versions.json
 .idea/phpunit.xml
 .idea/plates.iml
 .idea/vcs.xml
-composer.phar
